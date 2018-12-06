@@ -35,10 +35,39 @@ exports.handler = function(event, context, cb) {
 
 ## supported functions
 
-- `discover`: discovery
-- `powerControllerTurnOn`: turn on
-- `powerControllerTurnOff`: turn off
-- `authorization`: [Alexa.Authorization Interface](https://developer.amazon.com/docs/device-apis/alexa-authorization.html)
+- [Alexa.Discovery Interface](https://developer.amazon.com/docs/device-apis/alexa-discovery.html)
+  - `discover`: discovery
+- [Alexa.PowerController Interface](https://developer.amazon.com/docs/device-apis/alexa-powercontroller.html)
+  - `powerControllerTurnOn`: turn on
+  - `powerControllerTurnOff`: turn off
+- [Alexa.ChannelController Interface](https://developer.amazon.com/docs/device-apis/alexa-channelcontroller.html)
+  - `channelControllerChange`: change channel
+  - `channelControllerSkip`: skip channel
+- [Alexa.Speaker Interface](https://developer.amazon.com/docs/device-apis/alexa-speaker.html)
+  - `speakerSetVolume`: set volume
+  - `speakerAdjustVolume`: adjust volume
+  - `speakerSetMute`: set mute
+- [Alexa.StepSpeaker Interface](https://developer.amazon.com/docs/device-apis/alexa-stepspeaker.html)
+  - `stepSpeakerAdjustVolume`: adjust volume
+  - `stepSpeakerSetMute`: set mute
+- [Alexa.PlaybackController Interface](https://developer.amazon.com/docs/device-apis/alexa-playbackcontroller.html)
+  - `playBackControllerFastForward`: fast forward
+  - `playBackControllerNext`: next
+  - `playBackControllerPause`: pause
+  - `playBackControllerPlay`: play
+  - `playBackControllerPrevious`: previous
+  - `playBackControllerRewind`: rewind
+  - `playBackControllerStartOver`: start over
+  - `playBackControllerStop`: stop
+- [Alexa.InputController Interface](https://developer.amazon.com/docs/device-apis/alexa-inputcontroller.html)
+  - `inputControllerSelect`: select input
+- [Alexa.LockController Interface](https://developer.amazon.com/docs/device-apis/alexa-lockcontroller.html)
+  - `lockControllerLock`: lock
+  - `lockControllerUnlock`: unlock
+- [Alexa Interface](https://developer.amazon.com/docs/device-apis/alexa-interface.html#statereport)
+  - `stateReport`: state report
+- [Alexa.Authorization Interface](https://developer.amazon.com/docs/device-apis/alexa-authorization.html)
+  - `authorization`: accept grant
 
 If you don't provide equivalent function, the response will be `INVALID_DIRECTIVE`.
 
